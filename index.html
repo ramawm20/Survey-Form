@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Registration Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+    <section class="allsec">
+
+        <section class="sec1">
+            <h1 id="title">Traveling Intrests Form</h1>
+            <p id="description">This Form made to collect opinions about the most desirable country to visit</p>
+            <p>We will take your response and send you recommendations for trips to the country of your choice</p>
+        </section>
+
+        <section class="secsec">
+            <form id="survey-form">
+                <label for="name" id="name-label">-Enter Your Name please:
+                    <input class="st1" id="name" type="text" placeholder="your name" required>
+                </label>
+
+                <label for="email" id="email-label">-Enter Your Email please:
+                    <input class="st1" id="email" type="email" placeholder="your email" required>
+                </label>
+
+                <label for="number" id="number-label">-Enter Your age please:
+                    <input class="st2" id="number" type="number" min="10" max="70" placeholder="your age" required>
+                </label>
+                <br>
+                <label>*Select The most country you like
+                    <select id="dropdown">
+                        <option selected>Türkiye</option>
+                        <option>Italy</option>
+                        <option>France</option>
+                        <option>Spain</option>
+                        <option>Germany</option>
+
+                    </select>
+                </label>
+                <br>
+                <br>
+
+                <label>*Have you ever traveled to this country?</label>
+                <br>
+
+                <label>Yes
+                    <input id="radio" type="radio" value="yes" name="rd">
+                </label>
+                <label>No
+                    <input id="radio" type="radio" value="no" name="rd">
+                </label>
+                <br>
+                <br>
+                <label class="q1">*What do you like most about traveling?</label>
+                <br>
+                <br>
+                <label>-Taking photos
+                    <input id="checkbox" type="checkbox" value="c1" name="Taking-photos">
+                </label>
+                <br>
+                <label>-Meet new people
+                    <input id="checkbox" type="checkbox" value="c2" name="Meet-new-people">
+                </label>
+                <br>
+                <label>-Shopping
+                    <input id="checkbox" type="checkbox" value="c3" name="Shopping">
+                </label>
+                <br>
+                <label>-Others
+                    <input id="checkbox" type="checkbox" value="c4" name="Others">
+                </label>
+
+                <br>
+                <br>
+                <label class="st3">*Write what you want to say here:
+                    <br>
+
+                    <textarea class="TArea" rows="3" cols="40"
+                        placeholder="write something...ex==>thankfull message"></textarea>
+
+                    <br>
+                </label>
+                <input type="submit" id="submit">
+            </form>
+        </section>
+    </section>
+</body>
+
+</html>
